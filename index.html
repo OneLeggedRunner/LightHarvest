@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Aligner</title>
+    <style>
+        body{
+            border: 2px solid violet;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 80px;
+            background-color:beige;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            color: brown;
+        }
+        .sample{
+            display: flex;
+            justify-content: space-between;
+        }
+        .s{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .ss{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Solar Panel Aligner</h1>
+    <h2>Introduction</h2>
+    <p>This study encompasses a thorough examination and implementationofan IoT-driven solar tracking system leveraging Arduino technology. Withthe escalating demand for renewable energy, solar power standsout asa promising solution. To optimize solar panel efficiency, aligningthemwith the sun's trajectory is essential throughout the day. Our projecttackles this by creating an economical, dependable, and scalablesolartracking system.</p>
+    <h1>Steps for the project</h1>
+    <h2>Step-1 : Tools</h2>
+    <h2>ESP-32</h2>
+    <img src="esp.jpg" alt="" width="200px">
+    <p>The ESP32 stands out as a versatile and potent microcontroller coupled withaWi-Fi/Bluetooth module, frequently employed in IoT (Internet of Things) endeavours. Renowned for its dual-core processor, ample memory, and wireless connectivitycapabilities, it serves as a cornerstone for various projects.</p>
+    <h2>LDR Sensor</h2>
+    <img src="ldr.webp" alt="" width="200px">
+    <p>The LDR (Light-Dependent Resistor) sensor operates by adjusting its electrical
+        resistance in response to the incident light. Widely utilized in diverse applicationssuch as automatic lighting systems or projects requiring light-sensitive reactions, it ispivotal for detecting light levels.</p>
+    <h2>Serovo Motor</h2>
+    <img src="servo.webp" alt="" width="200px">
+    <p>Functioning as a precision-oriented electric motor, the servo motor excelsincontrolling its angular position. Equipped with a feedback mechanism, typicallyapotentiometer or encoder, it ensures high-accuracy position maintenancethroughcontinuous monitoring.</p>
+    <h2>Jumper Wires</h2>
+    <img src="jump.jpg" alt="" width="200px">
+    <p>Jumper wires, featuring connector pins at each end, facilitate solder-free connectionsbetween two points. Primarily used with breadboards and prototyping tools, theyenable easy circuit adjustments.</p>
+    <h2>Bread Board</h2>
+    <img src="breadboard-gl12.jpg" alt="" width="200px">
+    <p>The breadboard serves as a reusable and solderless electronics prototypingtool,
+        streamlining the swift assembly and testing of electronic circuits.</p>
+    <h2>Step-2 : Working - Version 1</h2>
+    <p>Light Sensors (LDRs) positioned on the solar panel detect the sun's position, providing analog data reflecting light intensity. The ESP32 acts as thesystem'scentral processing unit, interpreting the analog data, calculating optimal solar panel
+        angles based on the sun's position, and transmitting control signals to servomotors. The servo motors, in turn, physically adjust the solar panel angles to alignwiththesun's path. A stable power supply, whether from batteries, solar panels, or other sources, isimperative for operating the ESP32, LDRs, and servo motors. TheESP32'senhanced processing power and built-in Wi-Fi and Bluetooth capabilities makeit asignificant upgrade from the Arduino Uno, contributing to greater systemcontrol, data processing, and potential integration with IoT applications. Solar tracking systems operate on a fundamental yet effective principle, trackingthesun's movement in the sky. This involves light sensors, microcontrollers, andservomotors. Light sensors detect the sun's position and intensity, conveying datatothemicrocontroller, which calculates optimal solar panel angles. Control signals arethensent to the servo motors, physically adjusting the panel angles to align withthesun, ensuring continuous optimization for maximum sunlight exposure and subsequentlyhigher energy output throughout the day.</p>
+    <div class="s">
+        <div class="sample">
+            <img src="1.jpeg" alt="" width="200px"><img src="2.jpeg" alt="" width="200px"><img src="3.jpeg" alt="" width="200px"><img src="4.jpeg" alt="" width="200px">
+        </div>
+        <p>Setup of our project</p>
+    </div>
+    
+    <h2>Step-3 : Working - Version 2</h2>
+    <div class="ss">
+        <img src="ss1.png" alt="" width="1200px"> <br>
+        <h3>Output of Serial Monitor</h3>
+        <img src="ss2.png" alt="" width="500px">
+        <h3>Output on blynk app</h3>
+    </div>
+    <p>The results of the project in the serial monitor andblynkapp. On serial monitor we get the temperature and light intensity readings of bothldr. On the blynk app we get the temperature readings from the GY68 sensor usinglabeled value display widget.</p>
+    <h2>Step-4 : Code Used in The Project</h2>
+    <img src="ss3.png" alt="" width="700px"><img src="ss4.png" alt="" width="700px"><img src="ss5.png" alt="" width="700px">
+    <h1>Conclusion</h1> 
+    <p>The project's solar tracking system serves as an example of the significant potential
+        of IoT technology for enhancing the gathering of solar energy. This technologyshowspotential for several real-world applications due to its cost-effective designandrealtime sun monitoring capability</p>   
+    <p>Its importance goes beyond isolated or off-grid locations where a reliableandeffective power supply is essential. It reduces the requirement for backuppowersources and helps to lower total energy costs by guaranteeing that solar panelsgenerate the highest amount of energy possible. Because of its IoT compatibility, thesystem may be used for predictive maintenance, data analytics, andremotemonitoring, making it an invaluable component of smart grids andurbaninfrastructure. </p>
+    <p>With the increasing use of renewable energy worldwide, our solar trackingsystemisan essential component of sustainable energy production and a major factor inreducing carbon footprints. In conclusion, our Internet of Things-enabledsolartracking system is a progressive project that will help advance the use of renewableenergy sources and provide environmentally friendly options for a range of sectors. The system is an interesting route for additional study and development in thefieldof
+        solar energy technology because of its potential for growth and improvement.</p>
+</div>
+    
+</body>
+</html>
